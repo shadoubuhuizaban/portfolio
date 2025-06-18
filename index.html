@@ -17,13 +17,20 @@
   </header>
 
   <nav class="navbar">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="logo">Karen Pan</div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="hamburger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+</nav>
+
 
   <section id="about" class="section">
     <h2>About Me</h2>
@@ -35,12 +42,13 @@
 
   <section id="projects" class="section">
     <h2>Projects</h2>
-    <div class="project">
+    <div class="project-container">
+      <div class="project-card">
       <h3>🛒 Online Ordering System</h3>
-      <p>
-        A cloud-native microservices-based food ordering app built using Spring Boot, Angular, Redis, and JWT authentication.
-      </p>
-      <a href="https://github.com/yourusername/online-ordering" target="_blank">View on GitHub</a>
+      <p>A microservices app using Spring Boot, Angular, Redis, JWT...</p>
+      <a href="https://github.com/yourusername/online-ordering" target="_blank" class="btn">View on GitHub</a>
+    </div>
+      <!-- 你可以复制 project-card 添加更多项目 -->
     </div>
   </section>
 
