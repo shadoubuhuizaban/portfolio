@@ -101,3 +101,21 @@ section {
   text-decoration: none;
 }
 .project-card .btn:hover { background: #74b9ff; }
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  margin-bottom: 1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn.secondary {
+  background-color: #636e72;
+  margin-left: 1rem;
+}
+.btn.secondary:hover {
+  background-color: #2d3436;
+}
+
