@@ -15,6 +15,7 @@
     <div class="logo">Mika Pan</div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -27,61 +28,128 @@
   </nav>
 
   <header class="hero">
-    <div class="container">
+  <div class="hero-container">
+    <div class="hero-left">
       <img src="avatar.JPG" alt="Mika's Avatar" class="avatar" />
       <h1>Hello, I'm Mika Pan</h1>
-      <p>💻 Software Engineer | Java | Spring Boot | Angular</p>
-      <a href="#projects" class="btn">View My Projects</a>
-      <a href="resume.pdf" class="btn secondary" download>Download Resume</a>
+      <p class="job-title">💻 Software Engineer | Java | React.js | Angular | Full-stack</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View My Projects</a>
+        <a href="resume.pdf" class="btn secondary" download>Download Resume</a>
+      </div>
     </div>
-  </header>
+    <div class="hero-right">
+      <p class="hero-description">
+        I'm a passionate developer with experience in building full-stack applications.
+        I enjoy solving real-world problems through technology and constantly learning new tools and frameworks.
+      </p>
+    </div>
+  </div>
+</header>
 
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <p>
-      I'm a passionate developer with experience in building full-stack applications.
-      I enjoy solving real-world problems through technology and constantly learning new tools and frameworks.
-    </p>
+  <section id="about" class="section dual-column-section">
+  <div class="info-card">
+    <h3>🎓 Education</h3>
+    <ul>
+      <li><strong>Northern Arizona University</strong> – Master’s in Computer Information Technology (Aug2024)</li>
+      <li><strong>Dongguan University of Technology</strong> – Bachelor (Jun2020)</li>
+    </ul>
+  </div>
+  <div class="info-card">
+    <h3>📄 Certificates</h3>
+    <ul>
+      <li>Software Development Essential - LaiOffer(Jul2024)</li>
+    </ul>
+  </div>
+</section>
+
+
+  <section id="experience" class="section">
+    <h2 class="section-title">Work Experience</h2>
+    <div class="project-grid">
+      <div class="project-card fade-in expandable" onclick="this.classList.toggle('expanded')">
+        <h3 class="section-title"> Silicon, Inc.</h3>
+        <p class="subtext">Software Developer (2025.03 – Present)</p>
+        <ul class="detail subtext"><li>Designed and implementing responsive, user-friendly frontend interfaces using Angular.</li>
+<li>Built robust backend services using Spring Boot, including shopping cart, user authentication, menu management.</li>
+<li>Ensured secure login/registration flows with role-based access control via JWT.</li>
+<li>Connected microservices using Feign clients and configuring centralized service registration with Eureka Server.</li>
+<li>Integrated Swagger UI for API documentation and Redis for efficient session and cart storage.</li>
+<li>Collaborated on REST API design and testing using tools like Postman.</li>
+<li></li>
+Skills: Amazon Web Services (AWS), Spring Boot, Angular, React.js, Kafka, Redis, MySQL, Maven, Swagger, Git, RESTful API.</ul>
+      </div>
+      <div class="project-card fade-in expandable" onclick="this.classList.toggle('expanded')">
+        <h3 class="section-title">Metropolitan Bank</h3>
+        <p class="subtext">BSA Assistant  (2023.04 – 2023.07)</p>
+        <ul class="detail subtext"><li>Monitored the real-time performance and stability of the bank’s risk detection system, ensuring 24/7 availability for trade surveillance and fraud detection.</li>
+<li>Investigated abnormal customer activity patterns flagged by the risk system, drafted the SAR.</li>
+<li>Monitored the daily/quarterly transaction and reported the suspicious activity.</li></ul>
+      </div>
+      <div class="project-card fade-in expandable" onclick="this.classList.toggle('expanded')">
+        <h3 class="section-title">Helipay</h3>
+        <p class="subtext">Software Engineer (2021.11 – 2022.10)</p>
+        <ul class="detail subtext"><li> Maintained and developed the components of the company's Java-based AML system using Spring Boot.</li>
+<li>Implemented new features to enhance compliance workflows, including customer profile enrichment, data obfuscation, and detailed audit trails.</li>
+<li>Integrated risk-screened transaction and activity data from the Risk Department into the AML system for downstream investigation and analysis.</li>
+<li>Built tools to ensure that enriched customer activity data was properly ingested, indexed, and presented to compliance investigators in a timely and accessible manner.</li>
+<li>Wrote and optimized SQL scripts to extract large datasets from enterprise databases for ad-hoc analysis and regulatory reporting.</li>
+<li>Assisted to translate evolving regulatory requirements into robust, auditable system features.</li>
+<li>Led the 2021 AML annual exam for five branches, got the result of the top-three performance among payment technology companies in Henan Province.</li>
+<li>Assisted the Compliance department with the completion of various compliance tasks.</li>
+
+<li></li>Skills: ERP, Spring Boot, MySQL, PLM, ALM, GitHub Actions, CI/CD, Docker, Microservices, Redis, RESTful API.</ul>
+      </div>
+      <div class="project-card fade-in expandable" onclick="this.classList.toggle('expanded')">
+        <h3 class="section-title">HSBC</h3>
+        <p class="subtext">Financial Service Specialist (2020.02 – 2021.11)</p>
+        <ul class="detail subtext"><li>Monitored the transaction triggered by the bank risk system, and investigated the suspicious
+customer with the bank record .</li> 
+<li>Maintained the customer’s information system with the updated customer documents, finished the ID&V and CDD process.</li> </ul>
+      </div>
+    </div>
   </section>
 
   <section id="projects" class="section">
-    <h2>Projects</h2>
+    <h2 class="section-title">Projects</h2>
     <div class="project-grid">
       <div class="project-card fade-in">
-        <h3>🛒 Online Ordering System</h3>
-        <p>A cloud-native microservices-based food ordering app using Spring Boot, Angular, Redis, and JWT authentication.</p>
-        <a href="https://github.com/yourusername/online-ordering" target="_blank" class="btn">View on GitHub</a>
+        <h3 class="section-title">🛒 Online Ordering System</h3>
+        <p class="subtext">A cloud-native microservices-based food ordering app using Spring Boot, Angular, Redis, and JWT authentication.</p>
+        <a href="https://github.com/yourusername/online-ordering" target="_blank" class="btn"> GitHub not available</a>
       </div>
-
       <div class="project-card fade-in">
-        <h3>📦 Inventory Tracker</h3>
-        <p>A simple inventory management tool built with React and Firebase for small businesses.</p>
-        <a href="https://github.com/yourusername/inventory-tracker" target="_blank" class="btn">View on GitHub</a>
+        <h3 class="section-title">Mental Assist System</h3>
+        <ul class="subtext"><li> Designed and implemented a responsive, user-friendly Android Mobile Application using Android Studio, integrating
+psychological test features, result analysis, and a notepad.</li>
+<li> Built the client-side interface with Kotlin, enabling users to take psychological tests, access psychological knowledge, and share
+diaries.</li>
+<li> Features include user authentication, information management, psychological exam, CRUD.</li></ul>
+        <a href="https://github.com/shadoubuhuizabaní" target="_blank" class="btn">View on GitHub</a>
       </div>
-
       <div class="project-card fade-in">
-        <h3>🗺️ Location Reminder App</h3>
-        <p>Mobile app to send reminders based on geolocation, built using Kotlin and Google Maps API.</p>
-        <a href="https://github.com/yourusername/location-reminder" target="_blank" class="btn">View on GitHub</a>
+        <h3 class="section-title">My Portfolio</h3>
+        <p class="subtext">A web Appplication to intorduce myself. </p>
+        <a href="https://shadoubuhuizaban.github.io/portfolio" target="_blank" class="btn">click to view</a>
       </div>
     </div>
   </section>
 
   <section id="skills" class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li>Java / Spring Boot</li>
-      <li>Angular / TypeScript / HTML / CSS</li>
-      <li>SQL / Redis / AWS</li>
-      <li>REST APIs / Microservices</li>
+    <h2 class="section-title">Skills</h2>
+    <ul class="subtext">
+      <li>Backend: Java / Kotlin / Spring Boot/ Redis / Kafka / EST APIs / Microservices / Node.js</li>
+      <li>Frontend: Angular / React.js / TypeScript / HTML / CSS</li>
+      <li>Database: MySQL / MangoDB</li>
+      <li>Cloud: AWS / Azure</li>
     </ul>
   </section>
 
   <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">yourusername</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/yourname" target="_blank">yourname</a></p>
+    <h2 class="section-title">Contact Me</h2>
+    <p class="subtext">Email: <a href="mailto:miaoshanpan@gmail.com">miaoshanpan@gmail.com</a></p>
+    <p class="subtext">GitHub: <a href="https://github.com/shadoubuhuizaban" target="_blank">Mika Pan's GitHub</a></p>
+    <p class="subtext">LinkedIn: <a href="https://linkedin.com/in/mika-pan-8524b735b" target="_blank">Mika Pan</a></p>
     <form id="contact-form">
       <input type="text" placeholder="Your Name" required />
       <input type="email" placeholder="Your Email" required />
@@ -91,12 +159,13 @@
   </section>
 
   <footer>
-    <p>&copy; 2025 Mika Pan. All rights reserved.</p>
+    <p class="subtext">&copy; 2025 Mika Pan. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 

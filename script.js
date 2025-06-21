@@ -43,4 +43,39 @@ const observer = new IntersectionObserver(
 const fadeEls = document.querySelectorAll('.fade-in');
 fadeEls.forEach((el) => observer.observe(el));
 
+// 📬 4. 表单提交后清空字段 + 弹出提示
+const contactForm = document.getElementById('contact-form');
+
+if (contactForm) {
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    alert('Thank you for your message!');
+    contactForm.reset();
+  });
+}
+
+// 🔝 5. 滚动到顶部按钮
+const scrollBtn = document.createElement('button');
+scrollBtn.textContent = '↑';
+scrollBtn.id = 'scrollToTop';
+scrollBtn.style.position = 'fixed';
+scrollBtn.style.bottom = '2rem';
+scrollBtn.style.right = '2rem';
+scrollBtn.style.padding = '0.5rem 1rem';
+scrollBtn.style.border = 'none';
+scrollBtn.style.borderRadius = '4px';
+scrollBtn.style.background = '#0984e3';
+scrollBtn.style.color = '#fff';
+scrollBtn.style.cursor = 'pointer';
+scrollBtn.style.display = 'none';
+scrollBtn.style.zIndex = '999';
+document.body.appendChild(scrollBtn);
+
+window.addEventListener('scroll', () => {
+  scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
+});
+
+scrollBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
 
